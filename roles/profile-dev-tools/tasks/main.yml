@@ -1,0 +1,50 @@
+---
+  - name: Install dev brew applications
+    homebrew: name={{ item }} state=latest
+    with_items:
+      - ant
+      - autoconf
+      - automake
+      - awscli
+      - coreutils
+      - git
+      - git-extras
+      - gradle
+      - htop-osx
+      - jq
+      - maven
+      - netcat
+      - nmap
+      - node
+      - packer
+      - phantomjs
+      - pyenv
+      - pyenv-pip-migrate
+      - pyenv-virtualenv
+      - pyenv-virtualenvwrapper
+      - python
+      - python3
+      - terraform
+      - tmux
+      - vault
+
+  - name: Download and place minikube in proper path
+    get_url: url="https://storage.googleapis.com/minikube/releases/v{{ minikube_version }}/minikube-darwin-amd64" dest=/usr/local/bin/minikube mode=0755
+
+  - name: Download and place kubectl in proper path
+    get_url: url="https://storage.googleapis.com/kubernetes-release/release/v{{ kubectl_version }}/bin/darwin/amd64/kubectl" dest=/usr/local/bin/kubectl mode=0755
+
+  - name: Install dev cask applications
+    homebrew_cask: name={{ item }} state=present
+    with_items:
+      - atom
+      - docker
+      - gpgtools
+      - hosts
+      - java
+      - keybase
+      - mou
+      - postman
+      - vagrant
+      - virtualbox
+      - virtualbox-extension-pack

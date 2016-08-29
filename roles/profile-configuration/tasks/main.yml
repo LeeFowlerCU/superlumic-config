@@ -1,0 +1,36 @@
+---
+
+  - name: Change the computer name
+    computername: LeeFowler-Mac
+
+  - osx_defaults: domain=com.apple.finder key=AppleShowAllFiles type=boolean value=true state=present
+    notify: killall Finder
+
+  - osx_defaults: domain=com.apple.desktopservices key=DSDontWriteNetworkStores type=string value=true state=present
+    notify: killall Finder
+
+  - osx_defaults: domain=com.apple.screencapture key=type type=string value=png state=present
+
+  - osx_defaults: domain=NSGlobalDomain key=KeyRepeat type=integer value=4 state=present
+
+  - osx_defaults: domain=NSGlobalDomain key=InitialKeyRepeat type=integer value=8 state=present
+
+  - osx_defaults: domain=NSGlobalDomain key=ApplePressAndHoldEnabled type=boolean value=false state=present
+
+  - osx_defaults: domain=com.apple.menuextra.clock key=DateFormat type=string value='EEE, MMM d,  h:mm' state=present
+
+  - osx_defaults: domain=com.apple.menuextra.battery key=ShowPercent type=string value=YES state=present
+
+  - osx_defaults: domain=NSGlobalDomain key=NSQuitAlwaysKeepsWindows type=boolean value=false state=present
+
+  - osx_defaults: domain=com.apple.dock key=tilesize type=float value=32 state=present
+
+  - osx_defaults: domain=com.apple.dock key=autohide type=boolean value=true
+
+  - osx_defaults: domain=com.apple.dock key=autohide-time-modifier type=int value=0
+
+  - osx_defaults: domain=com.apple.dock key=autohide-delay type=int value=0
+
+  - osx_defaults: domain=com.apple.dock key=minimize-to-application type=integer value=1
+
+  - osx_defaults: domain=NSGlobalDomain key=NSNavPanelExpandedStateForSaveMode type=boolean value=true

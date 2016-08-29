@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  connection: local
+
+  roles:
+    - profile-configuration
+    - profile-environment
+    - profile-applications
+    - profile-dev-tools
