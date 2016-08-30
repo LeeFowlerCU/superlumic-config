@@ -16,5 +16,3 @@
 
   - name: Set git user email
     git_user_email: LeeFowler.CU@outlook.com
-
-  - name: Run bash-it setup
