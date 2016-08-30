@@ -10,9 +10,3 @@
       create=true
     with_items:
       - { regexp: "^{{ ansible_user_id }}", line: "{{ ansible_user_id }} ALL=(ALL) NOPASSWD: ALL" }
-
-  - name: Set git user name
-    git_user_name: Lee Fowler
-
-  - name: Set git user email
-    git_user_email: LeeFowler.CU@outlook.com
