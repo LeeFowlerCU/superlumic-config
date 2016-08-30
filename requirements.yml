@@ -11,27 +11,3 @@
 
 - src: https://github.com/superlumic/ansible-role-cli.git
   name: superlumic-cli
-
-- src: https://github.com/superlumic/ansible-role-mysql.git
-  name: superlumic-mysql
-
-- src: https://github.com/superlumic/ansible-role-php.git
-  name: superlumic-php
-
-- src: https://github.com/superlumic/ansible-role-sublimetext.git
-  name: superlumic-sublimetext
-
-- src: https://github.com/superlumic/ansible-role-node.git
-  name: superlumic-node
-
-- src: https://github.com/superlumic/ansible-role-postgresql.git
-  name: superlumic-postgresql
-
-- src: https://github.com/superlumic/ansible-role-vim.git
-  name: superlumic-vim
-
-- src: https://github.com/superlumic/ansible-role-modjk.git
-  name: superlumic-modjk
-
-- src: https://github.com/superlumic/ansible-role-skylab.git
-  name: superlumic-skylab
