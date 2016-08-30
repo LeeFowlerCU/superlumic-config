@@ -1,6 +1,7 @@
 ---
 
-  - computername: computername=LeeFowler-Mac
+  - name: Change the Computer Name
+    computername: computername=LeeFowler-Mac
 
   - osx_defaults: domain=com.apple.finder key=AppleShowAllFiles type=boolean value=true state=present
     notify: killall Finder
