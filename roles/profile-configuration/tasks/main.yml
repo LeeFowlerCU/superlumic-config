@@ -10,7 +10,7 @@
 
   - osx_defaults: domain=NSGlobalDomain key=KeyRepeat type=integer value=4 state=present
 
-  - osx_defaults: domain=NSGlobalDomain key=InitialKeyRepeat type=integer value=8 state=present
+  - osx_defaults: domain=NSGlobalDomain key=InitialKeyRepeat type=integer value=10 state=present
 
   - osx_defaults: domain=NSGlobalDomain key=ApplePressAndHoldEnabled type=boolean value=false state=present
 

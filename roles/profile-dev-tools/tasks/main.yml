@@ -1,5 +1,5 @@
 ---
-  
+
   - name: Install dev brew applications
     homebrew: name={{ item }} state=latest
     with_items:
@@ -28,6 +28,7 @@
       - terraform
       - tmux
       - vault
+      - watch
 
   - name: Download and place minikube in proper path
     get_url: url="https://storage.googleapis.com/minikube/releases/v{{ minikube_version }}/minikube-darwin-amd64" dest=/usr/local/bin/minikube mode=0755
